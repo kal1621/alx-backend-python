@@ -7,3 +7,8 @@ REST_FRAMEWORK = {
         # Add other authentication classes if needed
     ),
 }
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 20,  # Set the number of messages per page
+    ...
+}
