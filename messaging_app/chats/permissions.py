@@ -11,4 +11,4 @@ class IsAuthenticatedAndParticipant(BasePermission):
 
     def has_object_permission(self, request, view, obj):
         # Allow access only if the user is a participant in the conversation
-        return request.user in obj.conversation.participants.all()  # Assuming the 'conversation' relation exists
+        return request.user in obj.conversation.participants.all()  # Assuming 'conversation' is related to Message
