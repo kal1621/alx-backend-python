@@ -1,0 +1,8 @@
+# Command to apply the Ingress configuration
+kubectl apply -f ingress.yaml
+
+# Command to check the Ingress resource
+kubectl get ingress
+
+# Command to check the IP address of the Ingress controller if using Minikube
+minikube ip
